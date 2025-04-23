@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f3f0e7;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .form-container {
+      background-color: #e8f5e9; 
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    h2 {
+      color: #4e342e; 
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #3e4d3e;
+      font-weight: bold;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #a5d6a7;
+      border-radius: 8px;
+      background-color: #fff;
+    }
+
+    .checkbox-group {
+      margin-bottom: 15px;
+    }
+
+    .checkbox-group label {
+      display: block;
+      font-weight: normal;
+      margin-left: 5px;
+    }
+
+    button {
+      background-color: #81c784;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #66bb6a;
+    }
+
+    .success-message {
+      display: none;
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #c8e6c9;
+      border-left: 5px solid #388e3c;
+      border-radius: 8px;
+      color: #2e7d32;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<div class="form-container">
+  <h2>Formulario de Registro</h2>
+  <form id="registroForm">
+    <label for="nombre">Nombre Completo:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="correo">Correo Electrónico:</label>
+    <input type="email" id="correo" name="correo" required>
+
+    <label for="contrasena">Contraseña:</label>
+    <input type="password" id="contrasena" name="contrasena" required>
+
+    <label for="fecha">Fecha de Nacimiento:</label>
+    <input type="date" id="fecha" name="fecha">
+
+    <label for="genero">Género:</label>
+    <select id="genero" name="genero">
+      <option value="">Seleccionar</option>
+      <option value="femenino">Femenino</option>
+      <option value="masculino">Masculino</option>
+      <option value="otro">Otro</option>
+    </select>
+
+    <div class="checkbox-group">
+      <label>¿Cómo supiste de nosotros?</label>
+      <label><input type="checkbox" name="fuente" value="redes"> Redes sociales</label>
+      <label><input type="checkbox" name="fuente" value="amistades"> Amistades</label>
+      <label><input type="checkbox" name="fuente" value="otros"> Otros medios</label>
+    </div>
+
+    <button type="submit">Registrar</button>
+  </form>
+
+  <div class="success-message" id="mensajeExito"></div>
+</div>
+
+<script>
+  const form = document.getElementById('registroForm');
+  const mensaje = document.getElementById('mensajeExito');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    const nombre = document.getElementById('nombre').value;
+    mensaje.textContent = `${nombre} se ha registrado exitosamente.`;
+    mensaje.style.display = 'block';
+    form.reset();
+  });
+</script>
+
+</body>
+</html>

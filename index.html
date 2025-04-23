@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>EcoFood</title>
+
+
+    <meta name="author" content="Iris Muñoz Hinestroza">
+  <meta name="description" content="diseño,web,app,marketing,fotografia">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="assets/img/favicon.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;1,800&display=swap" rel="stylesheet">
+<style data-styled="active" data-styled-version="5.1.1"></style>
+  <script src="https://kit.fontawesome.com/7f47de5492.js" crossorigin="anonymous"></script>
+  </head>
+
+
+  <body class="" id="inicio">
+
+
+        <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-gradientcolor1 fixed-top">
+  <div class="container-fluid fondonav">
+  <a class="navbar-brand" href="#">
+  <img class="logoheader my" src="assets/img/logo.png" width="200px" alt="Logo"> </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span></button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+  <ul class="navbar-nav ms-auto">
+  <li class="nav-item">
+  <a class="nav-link" href="#inicio">Quienes Somos</a>
+  </li>
+  <a class="nav-link" href="login.html">inicia Sesión</a>
+</li>
+<a class="nav-link" href="registro.html">Únete</a>
+</li>
+  <li class="nav-item">
+  <a class="nav-link" href="#comentarios" >Comenta</a>
+  </li>
+
+  <li class="nav-item">
+  <a class="nav-link" href="#contacto">Contacto</a>
+  </li>
+  </ul>
+  </div>
+  </div>
+  </nav>
+
+
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">ECOMiembro</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+
+        <div class=“px-lg-5 py-lg-4 p-4”>
+        <h3 class=“font-weight-bold mb-4>Bienvenido</h3>
+        <form class=“mb-5”>
+        <div class=mb-4>
+        <label for=“exampleinputemail1” class=“form-label font-weight-bold”>Correo</label>
+        <input type=“email” class=“form-control bg-dark-x border-0 placeholder=“Ingresa tu email” id=“exampleInputEmail1” aria-describedby=“emailHelp”>
+        </div>
+        <div class=“mb-4”>
+        <label for=“exampleinputePassword1” class=“form-label font-weight-bold”>Contraseña</label>
+        <input type=“password” class=“form-control bg-dark-x border-0 mb-2 placeholder=“Ingresa tu contraseña” id=“exampleInputpassword1”>
+        <br></br>
+        <a href=“#” id=“emailHelp” class=“form-text text-muted text-decoration-none”>¿Has olvidado tu contraseña?</a>
+        </div>
+        <div class="mb-3">
+        <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+        <label class="form-check-label" for="dropdownCheck">
+                    Recuerdame
+        </label>
+        </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Ingresa</button>
+        </form>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Eres nuevo? Registrate</a>
+        <a class="dropdown-item" href="#">Olvidaste tu contraseña?</a>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!--Encabezado-->
+  <header class="hero text-light text-right pt-5 mt-5" style="
+            background-image: url(assets/img/pagina1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: left;
+            padding-bottom: 7rem;
+            ">
+      <div class="carousel-container">
+         
+        <div class="carousel">
+          <img src="assets/img/img1.jpg" alt="Imagen 1" />
+          <img src="assets/img/img2.jpg" alt="Imagen 2" />
+          <img src="assets/img/img3.jpg" alt="Imagen 3" />
+          <img src="assets/img/img4.jpg" alt="Imagen 4" />
+
+        </div>
+      </div>
+         
+          <!-- Modal -->
+          <div class="modal fade" id="registro" tabindex="-1" aria-labelledby="registroLabel" aria-hidden="true">
+          <div class="modal-dialog">
+          <div class="modal-content">
+          <div class="modal-header">
+          <h5 class= text-dark "modal-title" id="registroModalLabel">Registrarme</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body bg-gradientcolor1">
+
+            <div class="row g-2">
+  <div class="col-md">
+    <div class= "form-floating">
+      <input type="email" class="form-control" id="floatingInputGrid" placeholder="Correo@gmail.com" value="correo@gmail.com">
+      <label for="floatingInputGrid">Ingresa Correo</label>
+
+    </div>
+  </div>
+
+
+  <!-- categorias -->
+            <div class="form-floating">
+              <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                <option selected>Seleciona Proyecto</option>
+                <option value="1">¿Como Reusar?</option>
+                <option value="2">Reciclar en las Escuelas</option>
+                <option value="3">Proteger las aguas limpias</option>
+                <option value="4">Controlar la producción de plasticos</option>
+                <option value="5">Reciclar en mi comuna</option>
+              </select>
+              <label for="floatingSelect" text-dark >Escoge un proyecto</label>
+            </div>
+          </div>
+
+          <div class="modal-footer bg-gradientcolor1 text-dark">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Unirme</button>
+          </div>
+          </div>
+          </div>
+          </div>
+
+      </div>
+  </header>
+
+  <!--Buscador-->
+<section class="container-fluid p-3 bg-gradientcolor">
+  <div class="container">
+    <div class="row mt-3">
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-4">
+      <h1 class="text-light">
+      ¿Qué estas buscando? </h1>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-7 ">
+          <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Buscar aquí" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Buscar</button>
+          </form>
+          </div>
+          </div>
+    </section>
+
+
+
+    <!--Posicionamiento de iconos-->
+
+    <section id="about" class="container text-center my-5">
+    <h2 class="display-4 font-weight-bold my-4">Estas en el lugar correcto</h2>
+    <p class="my-4">Todos queremos luchar por una misma causa y aqui te mostramos la herramientas para aprender, informarte y saber mas sobre como reducir, reutilizar y reciclar.</p>
+
+        <div class="row">
+            <div class="col-md-4">
+                <i class="fas fa-medal fa-3x my-3"></i>
+                <h3 class="my-3">Misión</h3>
+                <p class="my-3">Nuestra misión es sensibilizar y movilizar a las comunidades locales y globales sobre la importancia de reducir el desperdicio de alimentos, brindando herramientas prácticas, educativas y tecnológicas que permitan a las personas adoptar hábitos sostenibles y responsables para mejorar la seguridad alimentaria y proteger el medio ambiente.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-heart fa-3x my-3"></i>
+                <h3 class="my-3">Visión</h3>
+                <p class="my-3">Nuestra visión es un mundo en el cual los alimentos se valoren y aprovechen responsablemente, en donde la seguridad alimentaria esté garantizada para todos y el desperdicio alimentario sea mínimo, generando un impacto positivo significativo en el medio ambiente, la economía y la sociedad.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-laptop-code fa-3x my-3"></i>
+                <h3 class="my-3">¿Què Hacemos?</h3>
+                <p class="my-3">Educamos:Ofrecemos materiales educativos gratuitos y talleres comunitarios para fomentar prácticas sostenibles en el consumo de alimentos.
+                  <br>
+                  Conectamos:Promovemos alianzas entre productores, comerciantes, consumidores y comunidades para reducir excedentes y aprovechar al máximo los alimentos disponibles.
+                  <br>    
+                  Innovamos:Utilizamos la tecnología para desarrollar soluciones prácticas, como aplicaciones móviles, plataformas web y redes comunitarias que faciliten la reducción del desperdicio alimentario.
+                  </p>
+            </div>
+        </div>
+    </section>
+
+
+
+  <!--Cards & Modales-->
+
+  <section>
+  <div class="textotitulo mx-5">
+  <h2>Por donde empezamos...</h2>
+
+  <div class="container">
+  <div class="row centrado">
+
+
+
+  <div class="col-md-4">
+  <article class="my-5">
+
+  <div class="card" style="width: 25rem;">
+  <img src="assets/img/rep.jpg" class="card-img-top" alt="rep">
+  <div class="card-body">
+  <h5 class="card-title">Ciudad / Infraestructura para reciclaje</h5>
+  <p class="card-text">Ley REP implicará la instalación de 354 puntos limpios en cuatro años.</p>
+  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#rep">Leer más...</a>
+  </div>
+  </div>
+  </article>
+  </div>
+
+  <div class="col-md-4">
+  <article class="py-5">
+
+
+  <div class="card" style="width: 25rem;">
+  <img src="assets/img/reciclaje.jpg" class="card-img-top" alt="reciclaje">
+  <div class="card-body">
+  <h5 class="card-title">Opinión / Medio Ambiente</h5>
+  <p class="card-text">Día Internacional del Reciclaje 2021: revaloricemos los residuos</p>
+  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reciclaje">Leer más...</a>
+  </div>
+  </div>
+  </article>
+  </div>
+
+  <div class="col-md-4">
+  <article class="my-5">
+
+  <div class="card" style="width: 25rem;">
+  <img src="assets/img/circular.jpg" class="card-img-top" alt="circular">
+  <div class="card-body">
+  <h5 class="card-title">Consumo y Producción / Economía Circular</h5>
+  <p class="card-text">“La pandemia abrió una nueva forma de pensar, nuevas oportunidades para el reciclaje y cómo se fabrican los productos”</p>
+  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#circular">Leer más...</a>
+  </div>
+  </div>
+  </article>
+  </div>
+</div>
+
+
+  </section>
+
+  <div class="modal fade" id="ministra" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog" role="document">
+  <div class="modal-content">
+ <div class="modal-header">
+<h5 class="modal-title" id="ModalLabel">Estrategia Climática</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">×</span></button>
+  </div>
+  <div class="modal-body">
+  <img class="img-fluid mb-3" src="assets/img/ministra.jpg" alt="ministra">
+
+                  <p>La ministra del Medio Ambiente, Carolina Schmidt, encabezó la presentación de la Estrategia Climática de Largo Plazo (ECLP), una hoja de ruta que establece los objetivos y metas sectoriales concretas que permitirán que Chile sea carbono neutral y resiliente el clima a más tardar al 2050, tal como lo pide la Ciencia para hacer frente a los impactos del cambio climático.</p>
+
+                  <p>La ministra Schmidt detalló que la ECLP “establece 407 metas de transición y transformación de todos los sectores claves para el país, y se van poniendo metas año a año, de manera de alcanzar nuestras metas”. Añadió que “Chile llegará a la COP26 como el primer país de América del Sur que cumple con lo establecido en el Acuerdo de París y presenta la Estrategia Climática de Largo Plazo, lo que se suma a la aprobación en el Senado de la ley marco de cambio climático”.</p>
+  </div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+
+  <div class="modal fade" id="hidronor" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog" role="document">
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="ModalLabel">Hidronor</h5>
+  <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">×</span></button>
+  </div>
+  <div class="modal-body">
+  <img class="img-fluid mb-3" src="assets/img/hidronor.jpg" alt="hidronor">
+
+                  <p>Las cifras expuestas por distintos organismos durante los últimos años evidencian claramente que el saneamiento ambiental es una necesidad imperiosa. En Chile, como ejemplo, el Informe del Estado del Medio Ambiente 2020 demostró que, durante el 2018, nuestro país generó un total de 19,6 millones de toneladas de residuos sólidos anuales, de los cuales, el 53% fueron de origen industrial, 42% municipales, 2% por lodos de plantas de tratamiento de aguas servidas, y el restante (3%) pertenece a residuos peligrosos.</p>
+
+                  <p>Si lo vemos en detalle, en lo que a residuos domiciliarios se refiere, sólo el 1% de el total generado se recicla; el resto es eliminado. Además, sólo reciclamos el 8,5% de los residuos plásticos generados (material más contaminante presente en el mundo), lo que corresponde solo a 83.679 toneladas de las 990 mil que se consumen anualmente, y esta misma tendencia ocurre con el resto de los residuos.
+
+Ante las cifras expuestas, queda clara entonces la necesidad de tomar cartas en el asunto, y bajo este objetivo, empresas como Hidronor trabajan arduamente para devolver al medio ambiente el saneamiento esperado, aportando a la mitigación del cambio climático con la generación de energía limpia a partir de biogás y combustible alternativo producto del tratamiento de residuos.</p>
+  </div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+
+
+  <div class="modal fade" id="pesca" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog" role="document">
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="ModalLabel">Pesca Industrial</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">×</span></button>
+  </div>
+  <div class="modal-body">
+  <img class="img-fluid mb-3" src="assets/img/pesca.jpg" alt="pesca">
+
+                  <p>Unos atractivos sets de posavasos, maceteros y portalápices desarrollados íntegramente a partir de mascarillas recicladas, es el resultado de un promisorio proyecto de economía circular que vinculó a los ministerios del Medio Ambiente, de Ciencias, a la Universidad de Concepción y a la Pesca Industrial de la Región del Biobío.
+
+La idea surgió a inicios de la pandemia para dar un uso sustentable a las más de 20.000 mascarillas quirúrgicas utilizadas cada semana en las plantas pesqueras del Biobío. Estos elementos de protección personal son fundamentales para prevenir contagios, pero representan un severo riesgo ambiental. Están confeccionadas con diminutas fibras de polipropileno, un material que prácticamente no se degrada, contamina distintos ecosistemas y daña a la avifauna.</p>
+
+                  <p>Esta experiencia que convirtió a la Pesca Industrial del Biobío en el primer sector productivo del país en reciclar estos desechos fue destacada por la ministra del Medio Ambiente, Carolina Schmidt. “Dado lo prolongado de la pandemia, este piloto, desarrollado por Asipes en conjunto de la UDT de la Universidad de Concepción, es una excelente iniciativa que nosotros respaldamos y que nos ayudará a combatir la ‘basura Covid’, conformada por mascarillas o guantes plásticos que muchas veces terminan contaminando nuestras playas, ríos, parques o calles”, sostuvo la secretaria de Estado.</p>
+  </div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+
+  <div class="modal fade" id="rep" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog" role="document">
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="ModalLabel">Ley REP</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">×</span></button>
+  </div>
+  <div class="modal-body">
+  <img class="img-fluid mb-3" src="assets/img/rep.jpg" alt="rep">
+
+                  <p>La infraestructura deberá estar montada en un plazo de cuatro años, para facilitar a la ciudadanía la entrega del material reciclado que separan en sus domicilios allí donde aún no exista una recolección puerta a puerta. Al mismo tiempo, permitirá a los productores la recuperación de un mayor volúmen para el cumplimiento de sus metas. Implicará multiplicar casi por cuatro los 98 puntos limpios existentes en la actualidad. Según las estimaciones del Ministerio del Medio Ambiente, 100 de estos puntos deberán emplazarse en la Región Metropolitana, y más atrás se ubican Valparaíso (42), Biobío (33) y La Araucanía (28). En cuanto a las comunas, Puente Alto (8), Maipú (7), Santiago (5), Antofagasta (5) y La Florida (5) concentrarían en mayor número.</p>
+
+                  <p>El pasado 16 de marzo, con la publicación del decreto que establece las metas de recolección y valorización de envases y embalajes en el país, comenzó el proceso para que en septiembre de 2023 se inicie masivamente la recolección de materiales reciclados de consumo masivo en el país. Y junto con establecer una serie de metas de reiclaje para plásticos, papeles y cartones, metales, envases de cartón y vidrios, fija también una serie de obligaciones a cumplir por los productores de este tipo de envases y embalajes. Entre ellas, la creación de infrastructura a lo largo de todo Chile para recibir estos residuos.
+
+Según establece la normativa, los sistemas de gestión creados por las empresas para cumplir con sus metas deberán diseñar, instalar y operar instalaciones de recepción y almacenamiento en las comunas que tengan un determinado número de habitantes denominado “población corregida”, esto es, sus residentes habituales más la población flotante que llega, por ejemplo, en verano.</p>
+  </div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="modal fade" id="reciclaje" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog" role="document">
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="ModalLabel">Día Internacional del Reciclaje</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">×</span></button>
+  </div>
+  <div class="modal-body">
+  <img class="img-fluid mb-3" src="assets/img/reciclaje.jpg" alt="reciclaje">
+
+                  <p>La tierra es nuestra casa y no podemos quedarnos de brazos cruzados, depositando expectativas en las autoridades. La existencia de cualquier empresa debe ayudar a hacer que el medio ambiente y la sociedad sean mejores, deben promover el bien social, ambiental, económico y cultural, yendo más allá de simplemente reducir y neutralizar los impactos negativos generados por sus actividades. Urge redefinir cómo habitamos el planeta, convirtiéndonos en consumidores y productores responsables a la hora de gestionar nuestros residuos.</p>
+
+                  <p>Según datos de la Tercera Encuesta Nacional del Medio Ambiente, a nivel país, se generan 7,7 millones de toneladas de residuos domiciliarios anualmente, el equivalente a 29 veces el cerro Santa Lucía. Sin embargo, apenas se recicla un cerro. Sin embargo, hay esperanza. Según Ipsos, líder mundial en investigación de mercado, 6 de cada 10 chilenos sostiene que es “muy probable” que el próximo año eviten productos con mucho packaging. Ese dato es importante, porque no todo es reciclaje. También debemos reducir la cantidad de desechos que cada uno produce.
+
+Considerando esos datos, las empresas debemos abrir caminos, preguntarnos qué impacto queremos dejar en nuestro entorno. En Natura ese ejercicio es fundamental, porque queremos generar una huella positiva, sabiendo que ya no basta con mitigar, reducir ni neutralizar los impactos de nuestras actividades. Una muestra reciente de nuestros esfuerzos por contribuir en esta materia fue en 2020, cuando nos sumamos al Acuerdo de Producción Limpia (APL), que se enmarca en la Ley de Reciclaje (REP), la que tiene como fin promover la reutilización y revalorización de residuos, obligando a que los fabricantes se organicen y financien la gestión de desechos derivados de sus productos. Por eso nos sumamos a esta causa, para que cada uno de nosotros diariamente pueda hacer pequeños grandes cambios para el planeta, sumándonos a la economía circular.</p>
+  </div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+  <div class="modal fade" id="circular" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog" role="document">
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="ModalLabel">Economía Circular</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">×</span></button>
+  </div>
+  <div class="modal-body">
+  <img class="img-fluid mb-3" src="assets/img/circular.jpg" alt="circular">
+
+                  <p>La pandemia como nuevo escenario para continuar desarrollando los conceptos de economía circular a nivel sectorial y sistémico global, fue el sello de las múltiples conversaciones desarrolladas en el Encuentro de Economía Circular: Conferencia y Ronda Empresarial, organizado por la Fundación Empresarial Eurochile.
+
+Especialistas y autoridades coincidieron en que esta situación de crisis global es una motivación concreta para avanzar, con mayor rapidez, en el cambio de paradigma productivo desde lo lineal a lo circular.</p>
+
+                  <p>Para el presidente de Fundación Empresarial Eurochile, Vicente Caruz, “el confinamiento de millones de personas en el mundo y la crisis social que conlleva ha acelerado el debate de nuevas formas de habitar el mundo y ocuparnos de sus equilibrios. La economía circular tiene un importante lugar en esta discusión por la urgente necesidad de salir de la crisis con un sentido de adaptación sostenible. Las empresas con creatividad, innovación y uso intensivo de tecnología rediseñen y adapten sus procesos productivos y servicios: para reducir el uso de materias primas vírgenes, reutilizar sus insumos, contar con productos de mayor duración y luego reciclarlos generando nuevas materias primas”.</p>
+  </div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+
+<!--Division de imagen y texto-->
+  <section class="container-fluid p-3 bg-gradient bg" id="comentarios" >
+
+    <section class="comments-section">
+      <div class="form-container">
+        <h2>Deja un comentario</h2>
+        <form id="commentForm">
+          <input type="text" name="nombre" placeholder="Tu nombre" required>
+          <input type="email" name="correo" placeholder="Tu correo" required>
+          <textarea name="comentario" rows="4" placeholder="Escribe tu comentario aquí..." required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+  
+      <div class="comments-container" id="commentsList">
+        <div class="comment">
+          <strong>Laura M.</strong>
+          <small>laura@example.com</small>
+          <p>¡Excelente servicio, muy recomendado!</p>
+        </div>
+        <div class="comment">
+          <strong>Pedro G.</strong>
+          <small>pedro@example.com</small>
+          <p>Me ayudaron rápidamente con mi consulta. Gracias.</p>
+        </div>
+        <div class="comment">
+          <strong>Marcela R.</strong>
+          <small>marcela@example.com</small>
+          <p>Muy atentos y profesionales. Volveré sin duda.</p>
+        </div>
+      </div>
+    </section>
+  
+    <script>
+      const form = document.getElementById('commentForm');
+      const commentsList = document.getElementById('commentsList');
+  
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const nombre = form.nombre.value;
+        const correo = form.correo.value;
+        const comentario = form.comentario.value;
+  
+        const nuevoComentario = document.createElement('div');
+        nuevoComentario.className = 'comment';
+        nuevoComentario.innerHTML = `
+          <strong>${nombre}</strong>
+          <small>${correo}</small>
+          <p>${comentario}</p>
+        `;
+  
+        commentsList.prepend(nuevoComentario);
+        form.reset();
+      });
+    </script>
+  
+
+  </section>
+
+
+
+
+  <!--Formulario-->
+<section>
+    <div class=" bg-gradientcolor text-dark rounded pt-2 p-bottom mx-5 ">
+<div class="container">
+  <div class="row mt-3">
+  <h3 class="display-4 text-center">Comunicate con Nosotros</h3>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-4">
+<form>
+  <div class="mb-3" id="contacto">
+    <label for="InputEmail" class="form-label">Correo electronico</label>
+    <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text text-white">Sus datos son confidencial.</div>
+  </div>
+  <div class="mb-3">
+    <label for="Inputcontraseña" class="form-label">Contraseña</label>
+    <input type="password" class="form-control" id="Inputcontraseña">
+  </div>
+  <div class="form-floating">
+  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+  <label for="floatingTextarea2" class="text-dark">Escriba su mensaje</label>
+
+</div>
+  <br>
+  <button type="submit" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Verifique sus datos antes de enviar">Enviar</button>
+</form>
+
+</div>
+
+
+<div class="col my-5">
+  <div class="row" >
+      <div class="g-col-4">
+        <h3 class="my-3">Redes sociales</h3>
+        <i class="fab fa-3x fa-twitter-square"></i>
+          <i class="fab fa-3x fa-facebook-square"></i>
+          <i class="fab fa-3x fa-instagram-square"></i>
+          <h4 class="my-3">Síguenos...</h4>
+          <p class="my-3">
+            Facebook: EcoFoodOficial
+            <br>
+            Instagram: @ecofood_oficial
+            <br>
+            Twitter: @EcoFood_org</p>
+          <h3 class="my-3">Dirección</h3>
+          <p class="my-3">Calle Verde 123, Ciudad Sostenible.</p>
+      </div>
+</div>
+
+
+
+</div>
+</div>
+  <br>
+</section>
+</div>
+</div>
+</div>
+<br>
+
+
+  <!--Footer-->
+        <footer class="container-fluid d-flex justify-content-center
+          align-content-center" style="background-color: #055902">
+            <img src="assets/img/logo.png" style="width: 20%" alt="logo footer">
+        </footer>
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
